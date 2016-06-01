@@ -52,3 +52,19 @@ library itmap {
         return self.keys[idx];
     }
 }
+
+contract Test {
+    // Use itmap for all functions on the struct
+    using itmap for itmap.itmap;
+    
+    // Declare an iterable mapping
+    itmap.itmap mymap;
+    
+    function insert(uint key, uint value) {
+        mymap.insert(key, value);
+    }
+    
+    function get(uint key) returns (uint value) {
+        return mymap.get(key);
+    }
+}
