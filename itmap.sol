@@ -33,22 +33,23 @@ library itmap {
             self.keys[e.keyIndex - 1] = self.keys[self.keys.length - 1];
             self.keys.length -= 1;
             delete self.data[key];
+            return true;
         }
     }
     
-    function contains(itmap storage self, uint key) internal returns (bool exists) {
+    function contains(itmap storage self, uint key) internal constant returns (bool exists) {
         return self.data[key].keyIndex > 0;
     }
     
-    function size(itmap storage self) internal returns (uint) {
+    function size(itmap storage self) internal constant returns (uint) {
         return self.keys.length;
     }
     
-    function get(itmap storage self, uint key) internal returns (uint value) {
+    function get(itmap storage self, uint key) internal constant returns (uint) {
         return self.data[key].value;
     }
     
-    function getKey(itmap storage self, uint idx) internal returns (uint value) {
+    function getKey(itmap storage self, uint idx) internal constant returns (uint) {
         return self.keys[idx];
     }
 }
