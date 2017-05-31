@@ -79,7 +79,7 @@ Pull requests are more than welcome. Code review, optimalisation, storage improv
 * Improvements in [itmap.sol gist](https://gist.github.com/ethers/7e6d443818cbc9ad2c38efa7c0f363d1) by [Ethers](https://gist.github.com/ethers)
 * Improvements, additions in [itMapsLib.sol]() and added to this repo by [Szerintedmi](https://github.com/szerintedmi)
 
-New mapping types, additional getters, README.md, naming consitency, destroy function
+    New mapping types, additional getters, README.md, naming consitency, destroy function
 
 ## Licence
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
