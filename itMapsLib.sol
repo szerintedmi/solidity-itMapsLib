@@ -33,7 +33,7 @@ library itMaps {
         if (e.keyIndex == 0)
             return false;
 
-        if (e.keyIndex < self.keys.length) {
+        if (e.keyIndex <= self.keys.length) {
             // Move an existing element into the vacated key slot.
             self.data[self.keys[self.keys.length - 1]].keyIndex = e.keyIndex;
             self.keys[e.keyIndex - 1] = self.keys[self.keys.length - 1];
@@ -108,7 +108,7 @@ library itMaps {
         if (e.keyIndex == 0)
             return false;
 
-        if (e.keyIndex < self.keys.length) {
+        if (e.keyIndex <= self.keys.length) {
             // Move an existing element into the vacated key slot.
             self.data[self.keys[self.keys.length - 1]].keyIndex = e.keyIndex;
             self.keys[e.keyIndex - 1] = self.keys[self.keys.length - 1];
@@ -178,7 +178,7 @@ library itMaps {
         if (e.keyIndex == 0)
             return false;
 
-        if (e.keyIndex < self.keys.length) {
+        if (e.keyIndex <= self.keys.length) {
             // Move an existing element into the vacated key slot.
             self.data[self.keys[self.keys.length - 1]].keyIndex = e.keyIndex;
             self.keys[e.keyIndex - 1] = self.keys[self.keys.length - 1];
@@ -247,7 +247,7 @@ library itMaps {
       if (e.keyIndex == 0)
           return false;
 
-      if (e.keyIndex < self.keys.length) {
+      if (e.keyIndex <= self.keys.length) {
           // Move an existing element into the vacated key slot.
           self.data[self.keys[self.keys.length - 1]].keyIndex = e.keyIndex;
           self.keys[e.keyIndex - 1] = self.keys[self.keys.length - 1];
