@@ -5,6 +5,7 @@ library itMaps {
  *  Iterable maps:
  *      itmapUintUint for uint=>uint maps
  *      itmapAddressUint for address=>uint maps
+ *      itmapUintAddress for uint=>address maps
  *  Use:
  *      import "./itmaps.sol"
  *      // Use itmap for all functions on the struct
@@ -17,7 +18,7 @@ library itMaps {
  *      itmap.itmapAddressUint im_myAddressUintMap;
  *      itmap.itmapUintAddress im_myUintAddress;
  *
- *      im_myUintUintMap.insert( <uint key>, <uint value>); 
+ *      im_myUintUintMap.insert( <uint key>, <uint value>);
  *      im_myUintUintMap.get(<uint key>); // returns item uint value by item key
  *      im_myUintUintMap.contains(<uint key); // returns bool true if key is in mapping
  *      im_myUintUintMap.size();  // returns uint size of the map ( for iterating)
