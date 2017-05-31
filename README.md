@@ -31,39 +31,39 @@ itMaps.itMapUintBool im_myUintBoolMap;
 ```
 * Insert
 
-`im_myUintUintMap.insert( <uint key>, <uint value>);`
+    `im_myUintUintMap.insert( <uint key>, <uint value>);`
 
 * Return item value by item key
 
-`im_myUintUintMap.get(<uint key>);`
+    `im_myUintUintMap.get(<uint key>);`
 
 * Check if key exists in map - returns true if it does
 
-`im_myUintUintMap.contains(<uint key);`
+    `im_myUintUintMap.contains(<uint key);`
 
 * Get size of the map
 
-`im_myUintUintMap.size();`
+    `im_myUintUintMap.size();`
 
 * Get item key by mapping index
 
-`im_myUintUintMap.getKeyByIndex(<uint idx>);`
+    `im_myUintUintMap.getKeyByIndex(<uint idx>);`
 
 * Get item value by mapping index
 
-`im_myUintUintMap.getValueByIndex(<uint idx>);`
+    `im_myUintUintMap.getValueByIndex(<uint idx>);`
 
 * Remove an item from map - returns true if item was in map
 
-`im_myUintUintMap.remove(<uint key>);`
+    `im_myUintUintMap.remove(<uint key>);`
 
 * Delete all mapping and array. NOTE: it iterates thourgh on all items.
 
-`im_myUintUintMap.destroy();`
+    `im_myUintUintMap.destroy();`
 
 * TODO: deletes all mapping and sets array lenght to 0 (doesn't free up array storage)
 
-`im_myUintUintMap.clear(); // not yet implemented`
+    `im_myUintUintMap.clear(); // not yet implemented`
 
 ## Storage considerations
 TODO: some explanation about ethereum storage considerations/implications
